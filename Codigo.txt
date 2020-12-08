@@ -1,0 +1,83 @@
+*****************************************************
+		      Ciclo For
+*****************************************************
+//Nota se necesita la libreria: import java.util.Scanner;
+
+  
+           Scanner teclado = new Scanner (System.in);
+        System.out.println("Cuantas notas quieres insertas: ");
+        int n = teclado.nextInt();
+        double nota,suma = 0;
+        
+        for(int conta = 0; conta<n; conta++){
+            System.out.println("Dame tu nota"+ conta + ";");
+            nota = teclado.nextDouble();
+            
+            suma = suma + nota;
+        
+        }
+        System.out.println("La suma es: "+suma);
+
+*****************************************************
+		      
+*****************************************************
+
+*****************************************************
+		      Ciclo While
+*****************************************************
+
+//Nota se necesita la libreria: import javax.swing.JOptionPane;
+
+ int conta=1;
+  double n = Double.parseDouble(JOptionPane.showInputDialog(null, "dame cuantas notas pondras:"));
+   double notas,suma=0;
+   
+   while(conta <= n){
+       System.out.println("Contador" + conta);
+       notas=Double.parseDouble(JOptionPane.showInputDialog(null, "Dame cuanto tienes en la nota: "));
+       suma = suma + notas;
+       conta++;
+           
+   }
+  double promedio =suma/n;
+  JOptionPane.showMessageDialog(null,"tu promedio es:"+promedio);
+
+*****************************************************
+		      
+*****************************************************
+
+
+
+*****************************************************
+		      Ciclo DoWhile
+*****************************************************
+
+//Nota se necesitan las siguientes librerias:
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+
+ public static void main(String[] args) throws IOException {
+      BufferedReader br = new BufferedReader(new InputStreamReader (System.in));
+        int conta=1,N;
+        
+        double suma = 0, nota;
+        System.out.println("Dime cuantas notas necesitas");
+        N = Integer.parseInt(br.readLine());
+        do{
+            System.out.println("Dame tu Nota"+conta);
+            nota=Double.parseDouble(br.readLine());
+            suma=suma+nota;
+            conta++;
+            
+        }while (conta <= N);
+        double promedio = suma/N;
+        System.out.println("El promedio es:"+promedio);
+        }
+
+*****************************************************
+		      
+*****************************************************
